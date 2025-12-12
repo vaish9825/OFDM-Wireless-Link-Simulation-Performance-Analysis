@@ -34,7 +34,10 @@ The simulation generates a 2x2 visualization of received symbol constellations a
 
 ### **Constellation Convergence Analysis**
 * **SNR = 5 dB:** High noise and fading cause significant symbol scattering; BER is high (~0.1).
+* **SNR = 10 dB:** Symbols begin to form observable clusters, though spread remains significant; BER improves but errors persist.
+* **SNR = 15 dB:** Distinct clusters emerge with minimal overlap as the equalizer effectively mitigates channel distortion, yielding a low BER.
 * **SNR = 20 dB:** The Zero-Forcing equalizer successfully inverts the channel effect. Received symbols (red) tightly cluster around the ideal QPSK constellation points (blue), indicating near-error-free transmission.
 
 ![Constellation Diagram](output.png)
 > *Example output showing the "cleanup" of the signal constellation as SNR increases*
+
